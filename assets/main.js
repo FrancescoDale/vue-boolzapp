@@ -4,8 +4,7 @@ var app = new Vue ({
         contacts : [
             {
                 name : 'Gianni',
-                avatar :'',
-                visible : true,
+                avatar :'images/avatar-366-456318.png',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -26,8 +25,7 @@ var app = new Vue ({
             },
             {
                 name : 'Samuele',
-                avatar :'',
-                visible : true,
+                avatar :'images/avatar-366-456318.png',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -48,8 +46,7 @@ var app = new Vue ({
             },
             {
                 name : 'Andrea',
-                avatar :'',
-                visible : true,
+                avatar :'images/avatar-366-456318.png',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -70,8 +67,7 @@ var app = new Vue ({
             },
             {
                 name : 'Erika',
-                avatar :'',
-                visible : true,
+                avatar :'images/avatar-366-456318.png',                
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',

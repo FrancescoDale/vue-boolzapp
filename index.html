@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="contact_section">
                         <div class="contact_header">
-                            <img src="images\avatar-366-456318.png" alt="avatar 1">
+                            <img src="images/avatar-366-456318.png" alt="avatar 1">
                             <div class="contact_header_icons">
                                 <i class="fas fa-address-card"></i>
                                 <i class="fas fa-comment-alt"></i>
@@ -41,8 +41,13 @@
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                         <div class="contact_list">
-
-                        </div>
+                            <div v-for="item, index in contacts">
+                                <img v-bind:src="item.avatar">
+                                <div class="contact_name">
+                                    <p>{{item.name}}</p>
+                                </div>
+                            </div>
+                    </div>
 
                     </div>
                     <div class="messages_section">
