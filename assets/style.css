@@ -104,7 +104,16 @@ h1 {
     display: flex;
 }
 
+.contact_search button {
+    background-color: #FFF;
+    color: darkgrey;
+    padding: 0 4px;
+}
+
+.contact_search button, input {
+    border: none;    
+}
+
 .contact_search input {
     width: calc(100% - 16px);
-    border-radius: 4px;
 }

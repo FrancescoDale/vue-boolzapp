@@ -30,8 +30,8 @@
                             <i class="fas fa-bell"></i>
                         </div>
                         <div class="contact_alert_text">
-                            <p>Ricevi notifiche di nuovi messaggi</p>
-                            <a href="#">Attiva notifiche dekstop</a>
+                            <p class="text-center">Ricevi notifiche di nuovi messaggi</p>
+                            <a class="text-center" href="#">Attiva notifiche desktop</a>
                         </div>
                         </div>
                         <div class="contact_search">
@@ -41,9 +41,9 @@
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                         <div class="contact_list">
-                            <div v-for="item, index in contacts">
+                            <div class="contact_list_style" v-for="item, index in contacts">
                                 <img v-bind:src="item.avatar">
-                                <div class="contact_name">
+                                <div class="">
                                     <p>{{item.name}}</p>
                                 </div>
                             </div>
