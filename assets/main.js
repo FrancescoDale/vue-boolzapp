@@ -14,7 +14,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'receveid',
+                        status: 'received',
                     },
                     {
                         date: '12/11/2020 15:35:55',
@@ -24,7 +24,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:45:55',
                         message: 'a posto!',
-                        status: 'receveid',
+                        status: 'received',
                     },
                 ],
             },
@@ -35,7 +35,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'receveid',
+                        status: 'received',
                     },
                     {
                         date: '12/11/2020 15:35:55',
@@ -45,7 +45,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:45:55',
                         message: 'a che ora lo porti?',
-                        status: 'receveid',
+                        status: 'received',
                     },
                 ],
             },
@@ -56,7 +56,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'receveid',
+                        status: 'received',
                     },
                     {
                         date: '12/11/2020 15:35:55',
@@ -66,7 +66,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:45:55',
                         message: 'fammi sapere quando vai così andiamo insieme',
-                        status: 'receveid',
+                        status: 'received',
                     },
                 ],
             },
@@ -77,7 +77,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'receveid',
+                        status: 'received',
                     },
                     {
                         date: '12/11/2020 15:35:55',
@@ -87,7 +87,7 @@ var app = new Vue ({
                     {
                         date: '12/11/2020 15:45:55',
                         message: 'arrivo',
-                        status: 'receveid',
+                        status: 'received',
                     },
                 ],
             },
