@@ -208,24 +208,20 @@ h1 {
 /* messages_body  */
 
 .messages_body {
+    display: flex;
+    flex-direction: column;
     height: calc(100% - 105px);
     overflow-y: scroll;
     padding: 25px 25px;
 }
 
-.messages_body::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .received {
-    float: left;
+    align-self: flex-start;
     background-color: #FFF;
 }
 
 .sent {
-    float: right;
+    align-self: flex-end;
     background-color: lightgreen;
 }
 
