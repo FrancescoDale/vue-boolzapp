@@ -208,7 +208,8 @@ h1 {
 }
 
 .message {
-
+    border-radius: 10px;
+    margin: 15px 10px;
 }
 
 .message::after {
@@ -218,11 +219,13 @@ h1 {
 }
 
 .sent {
-    float: left;
+    float: right;
+    background-color: white;
 }
 
 .received {
-    float: right;
+    float: left;
+    background-color: green;
 }
 
 
