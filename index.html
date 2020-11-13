@@ -68,8 +68,8 @@
                             </div>
                         </div>
                         <div class="messages_body">
-                            <div v-for="(item, index) in contacts[contactsIndex].messages" class="message" v-bind:class="item.status">
-                                <span>{{item.message}}</span>                 
+                            <div v-for="(item, index) in contacts[contactsIndex].messages" v-bind:class="item.status">
+                                <span>{{item.message}}</span>
                             </div>
 
                         </div>
