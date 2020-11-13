@@ -207,6 +207,25 @@ h1 {
     overflow-y: scroll;
 }
 
+.message {
+
+}
+
+.message::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sent {
+    float: left;
+}
+
+.received {
+    float: right;
+}
+
+
 /* messages_footer */
 
 .messages_footer {
