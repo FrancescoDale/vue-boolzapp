@@ -49,6 +49,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 8px 4px;
+    height: 80px;
 }
 
 .contact_header img {
@@ -62,15 +63,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
 }
 
 .contact_header_avi p {
-    align-content: center;
     margin-left: 10px;
 }
 
 .contact_header_icons {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,7 +150,7 @@ h1 {
     padding-top: 10px;
     background-color: #FFF;
     overflow-y: scroll;
-    height: calc(100% - 66px - 80px -54px)
+    height: calc(100% - 200px);
 }
 
 .contact_list_style {
