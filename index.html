@@ -45,7 +45,7 @@
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                         <div class="contact_list">
-                            <div class="contact_list_style" v-for="item, index in contacts">
+                            <div v-on:click="" class="contact_list_style" v-for="item, index in contacts">
                                 <img v-bind:src="item.avatar">
                                 <div class="text-center">
                                     <p> {{item.name}} </p>
@@ -75,7 +75,7 @@
                                 <span class="sent">messaggio in risposta</span>
                             </div>
                             <div class="message">
-                                <span class="received">ricevuta e risposta</span>
+                                <span class="received">prova messaggio lungo in risposta per vedere se si ridimensiona</span>
                             </div>
 
                         </div>

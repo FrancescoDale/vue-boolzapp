@@ -205,11 +205,11 @@ h1 {
 .messages_body {
     height: calc(100% - 105px);
     overflow-y: scroll;
+    padding: 25px 25px;
 }
 
 .message {
-    border-radius: 10px;
-    margin: 15px 10px;
+    margin-bottom: 20px;
 }
 
 .message::after {
@@ -218,14 +218,19 @@ h1 {
     clear: both;
 }
 
+.sent, .received {
+    padding: 8px 4px;
+    border-radius: 10px;
+    max-width: 250px;
+}
 .sent {
     float: right;
-    background-color: white;
+    background-color: lightgreen;
 }
 
 .received {
     float: left;
-    background-color: green;
+    background-color: #FFF;
 }
 
 
