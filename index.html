@@ -19,9 +19,9 @@
                     <div class="contact_section">
                         <div class="contact_header">
                             <div class="contact_header_avi">
-                                <img src="images/avatar-366-456318.png" alt="avatar 1">
+                                <img v-bind:src="profilo.avatar" alt="avatar 1">
                                 <p class="text-capitalize"
-                                >nome utente</p>
+                                > {{profilo.name}} </p>
                             </div>
                             <div class="contact_header_icons">
                                 <i class="fas fa-address-card"></i>
@@ -45,7 +45,7 @@
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                         <div class="contact_list">
-                            <div v-on:click="" class="contact_list_style" v-for="item, index in contacts">
+                            <div v-on:click="contactChange(index)" class="contact_list_style" v-for="item, index in contacts">
                                 <img v-bind:src="item.avatar">
                                 <div class="text-center">
                                     <p> {{item.name}} </p>
@@ -57,9 +57,9 @@
                     <div class="messages_section">
                         <div class="messages_header">
                             <div class="messages_header_avi">
-                                <img src="images/avatar-366-456318.png" alt="avatar 1">
+                                <img :src="contacts[contactsIndex].avatar" alt="avatar 1">
                                 <p class="text-capitalize"
-                                >nome utente</p>
+                                >{{contacts[contactsIndex].name}}</p>
                             </div>
                             <div class="messages_header_icons">
                                 <i class="fas fa-search"></i>
@@ -68,14 +68,8 @@
                             </div>
                         </div>
                         <div class="messages_body">
-                            <div class="message">
-                                <span class="received">messaggio in ingresso</span>
-                            </div>
-                            <div class="message">
-                                <span class="sent">messaggio in risposta</span>
-                            </div>
-                            <div class="message">
-                                <span class="received">prova messaggio lungo in risposta per vedere se si ridimensiona</span>
+                            <div class="message" v-for="item, index in contacts[contactsIndex].messages"  v-bind:class="item.status">
+                                <span>{{item.message}}</span>
                             </div>
 
                         </div>
