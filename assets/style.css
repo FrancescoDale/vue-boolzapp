@@ -204,13 +204,29 @@ h1 {
 
 .messages_body {
     height: calc(100% - 80px);
+    overflow-y: scroll;
 }
 
 /* messages_footer */
 
 .messages_footer {
     display: flex;
-    justify-content: space-between;   
-    height: 40px;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: lightgrey;
+}
+
+.messages_footer i {
+    margin: 0 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: darkgrey;
+    background-color: lightgrey;
+}
+
+.messages_footer input {
+    width: calc(100% - 180px);
+    height: 80%;
+    border-radius: 10px;
 }
