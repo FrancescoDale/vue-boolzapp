@@ -93,6 +93,7 @@ var app = new Vue ({
             },
 
         ],
+        inpuText : '',
     },
     methods : {
 
@@ -100,6 +101,11 @@ var app = new Vue ({
         contactChange(index) {
             this.contactsIndex = index;
         },
+
+        // funzione che prende il tasto enter
+        enterKey : {
+
+        }
     }
 
 

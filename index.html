@@ -75,7 +75,7 @@
                         </div>
                         <div class="messages_footer">
                             <i class="far fa-smile"></i>
-                            <input type="text" placeholder="Scrivi un messaggio">
+                            <input type="text" placeholder="Scrivi un messaggio" v-model="inpuText" v-on:keyup.enter='enterKey'>
                             <i class="fas fa-microphone"></i>
                         </div>
 
