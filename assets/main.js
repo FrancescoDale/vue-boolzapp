@@ -97,7 +97,7 @@ var app = new Vue ({
             },
 
         ],
-        inpuText : '',
+        inpuText : '', //
     },
     methods : {
 
@@ -107,7 +107,13 @@ var app = new Vue ({
         },
 
         // funzione che prende il tasto enter
-        enterKey : {
+        enterKey() : {
+            // oggetto che viene aggiunto all'array esistente
+            let inputMessage = {
+                date: '16/01/2020 12:00:00',
+                message: '',
+                status: 'sent'
+            },
 
         }
     }
