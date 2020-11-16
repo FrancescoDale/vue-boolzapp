@@ -115,11 +115,14 @@ var app = new Vue ({
                 status: 'sent'
             };
 
-            inputMessage.message = this.inpuText; // il testo digitato viene assegnato al campo messaggi del nuovo oggetto creato
+            // il testo digitato viene assegnato al campo messaggi del nuovo oggetto creato
+            inputMessage.message = this.inpuText;
 
-            this.contacts[this.contactsIndex].messages.push(inputMessage); // il nuovo oggetto viene pushato nell'array, nella conversazione selezionata
+            // il nuovo oggetto viene pushato nell'array, nella conversazione selezionata
+            this.contacts[this.contactsIndex].messages.push(inputMessage);
 
-            this.inpuText = ''; // pulizia del campo input
+            // pulizia del campo input
+            this.inpuText = '';
 
             // risposta automatica al messaggio inserito
 
@@ -129,7 +132,10 @@ var app = new Vue ({
                 message: 'prova',
                 status: 'received'
             };
-        }
+
+            // l'oggetto-risposta viene pushato nell'array
+            this.contacts[this.contactsIndex].messages.push(autoResponse);
+        },
 
 
     }
