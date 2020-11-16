@@ -110,7 +110,7 @@ var app = new Vue ({
         enterKey() {
             // oggetto che viene aggiunto all'array esistente
             let inputMessage = {
-                date: '16/01/2020 12:00:00',
+                date: '16/11/2020 12:00:00',
                 message: '',
                 status: 'sent'
             };
@@ -120,7 +120,18 @@ var app = new Vue ({
             this.contacts[this.contactsIndex].messages.push(inputMessage); // il nuovo oggetto viene pushato nell'array, nella conversazione selezionata
 
             this.inpuText = ''; // pulizia del campo input
+
+            // risposta automatica al messaggio inserito
+
+            // oggetto - risposta
+            let autoResponse = {
+                date : '16/11/2020 12:10:00',
+                message: 'prova',
+                status: 'received'
+            };
         }
+
+
     }
 
 
