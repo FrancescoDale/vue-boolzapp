@@ -97,7 +97,8 @@ var app = new Vue ({
             },
 
         ],
-        inpuText : '', //
+        inpuText : '', // prende il testo digitato dall'utente
+        research : '', // prende il testo digitato dall'utente nella casella della ricerca contatti
     },
     methods : {
 
