@@ -119,6 +119,7 @@ var app = new Vue ({
 
             this.contacts[this.contactsIndex].messages.push(inputMessage); // il nuovo oggetto viene pushato nell'array, nella conversazione selezionata
 
+            this.inpuText = ''; // pulizia del campo input
         }
     }
 
