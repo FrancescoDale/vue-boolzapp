@@ -49,6 +49,7 @@
                                 <img v-bind:src="item.avatar">
                                 <div class="text-center">
                                     <p> {{item.name}} </p>
+                                    <p> {{item.lastAccess}} </p>
                                 </div>
                             </div>
                     </div>
@@ -58,8 +59,12 @@
                         <div class="messages_header">
                             <div class="messages_header_avi">
                                 <img :src="contacts[contactsIndex].avatar" alt="avatar 1">
-                                <p class="text-capitalize"
-                                >{{contacts[contactsIndex].name}}</p>
+                                <div class="messages_header_avitext">
+                                    <p class="text-capitalize"
+                                    >{{contacts[contactsIndex].name}}</p>
+                                    <p>Ultimo accesso : {{contacts[contactsIndex].lastAccess}}</p>
+                                </div>
+
                             </div>
                             <div class="messages_header_icons">
                                 <i class="fas fa-search"></i>

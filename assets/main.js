@@ -10,6 +10,7 @@ var app = new Vue ({
             {
                 name : 'Gianni',
                 avatar :'images/avatar-366-456318.png',
+                lastAccess : '20:50',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -31,6 +32,7 @@ var app = new Vue ({
             {
                 name : 'Samuele',
                 avatar :'images/suarez.png',
+                lastAccess : '20:20',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -52,6 +54,7 @@ var app = new Vue ({
             {
                 name : 'Andrea',
                 avatar :'images/trump.png',
+                lastAccess : '21:50',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
@@ -73,6 +76,7 @@ var app = new Vue ({
             {
                 name : 'Erika',
                 avatar :'images/trinity.png',
+                lastAccess : '10:50',
                 messages : [
                     {
                         date: '12/11/2020 15:30:55',
