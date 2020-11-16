@@ -107,13 +107,17 @@ var app = new Vue ({
         },
 
         // funzione che prende il tasto enter
-        enterKey() : {
+        enterKey() {
             // oggetto che viene aggiunto all'array esistente
             let inputMessage = {
                 date: '16/01/2020 12:00:00',
                 message: '',
                 status: 'sent'
-            },
+            };
+
+            inputMessage.message = this.inpuText; // il testo digitato viene assegnato al campo messaggi del nuovo oggetto creato
+
+            this.contacts[this.contactsIndex].messages.push(inputMessage); // il nuovo oggetto viene pushato nell'array, nella conversazione selezionata
 
         }
     }
