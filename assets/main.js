@@ -127,6 +127,7 @@ var app = new Vue ({
             // risposta automatica al messaggio inserito
 
             // oggetto - risposta
+            setTimeout( ()  {
             let autoResponse = {
                 date : '16/11/2020 12:10:00',
                 message: 'prova',
@@ -135,10 +136,11 @@ var app = new Vue ({
 
             // l'oggetto-risposta viene pushato nell'array
             this.contacts[this.contactsIndex].messages.push(autoResponse);
+
+            } 4000);
+
         },
 
-
     }
-
 
 });
