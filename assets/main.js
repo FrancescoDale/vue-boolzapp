@@ -137,7 +137,7 @@ var app = new Vue ({
             // l'oggetto-risposta viene pushato nell'array
             this.contacts[this.contactsIndex].messages.push(autoResponse);
 
-            }, 4000);
+            }, 2000);
 
         },
 
