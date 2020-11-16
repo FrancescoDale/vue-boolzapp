@@ -141,7 +141,12 @@ var app = new Vue ({
             }, 2000);
 
         },
+    },
 
-    }
+    // uso computed perchè va usata solo quando cambia qualcosa che la riguarda, in questo caso l'inserimento di testo nella casella di ricerca
+     computed : {
+        
+
+     },
 
 });
